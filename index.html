@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <title>Easyzoom Whitelist Checker</title>
+    <meta property="og:site_name" content="Easyzoom Whitelist Checker" />
+    <meta property="og:site" content="https://whitepaper.easyzoom.xyz/" />
+    <meta property="og:title" content="Easyzoom Whitelist Checker"/>
+    <meta property="og:description" content="Check if your wallet address is on the easyzoom whitelist and get back your mint key!" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="/img/easyzoom-img-square.jpg" />
+    <meta property="og:url" content="https://whitelist.easyzoom.xyz/" />
+    <meta name="twitter:card" content="/img/easyzoom-img-banner.jpg">
+</head>
+<body>
+    <div class="gradient-background">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section-title text-big mb-5">Wallet Checker</div>
+                        <div class="logo-wrapper">
+                            <img src="img/big-logo-easyzoom.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="main-content">
+                           <h2 class="main-description">Are you in WL?</h2><p class="main-description">
+                                Here you can check if you are whitelisted, you can also retrieve your personal key for the mint through smart contract or with external software.<br></p>
+                            <div class="main-wrapper start" id="main-wrapper">
+                                <div class="main-input-wrapper">
+                                    <img src="img/wallet-icon.svg" alt="" class="wallet-icon">
+                                    <input type="text" value="" placeholder="Enter you wallet address here..." id="main-input">
+                                    <button class="main-input-search" id="search-button">
+                                        <img src="img/search-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="text-primary d-flex align-items-center justify-content-center h-70">
+                                    <span id="success-area"></span>
+                                </div>
+                                <div class="relative">
+                                    <div class="main-key-wrapper_shadow"></div>
+                                    <div class="main-key-wrapper">
+                                        Grab your personal key here!
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="text-center">
+                                <span class="help-text">
+                                    <a href="https://discord.gg/BFNU5pZ4Z3">Your wallet should be here? Contact us</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-wrapper d-flex justify-content-between">
+                            <div class="footer-logo-wrapper">
+                                <img src="img/big-logo-easyzoom.png" alt="">
+                            </div>
+                            <ul class="d-flex align-items-center gap-3">
+                                <li class="footer-icon">
+                                    <a href="">
+                                        <img src="img/discord-icon.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer-icon">
+                                    <a href="">
+                                        <img src="img/twitter-icon.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="keccak256.js"></script>
+    <script type="module" src="merkletreejs.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
